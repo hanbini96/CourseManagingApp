@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This XML file provides all the text to be used when the application
+    is to be displayed in English.
+-->
+<properties>
+    <property_list>
+
+        <!-- KOREAN LANGUAGE SETTINGS FOR DESKTOP JAVA FRAMEWORK CONTROLS -->
+
+        <!-- WELCOME DIALOG TEXT -->
+        <property name="WELCOME_DIALOG_TITLE"               value="오피스 시간에 들어올때는 마음대로지만 나갈땐 아니란다"></property>
+        <property name="WELCOME_DIALOG_RECENT_WORK_LABEL"   value="최근 작업"></property>
+        <property name="WELCOME_DIALOG_NEW_BUTTON_TEXT"  value="새 오피스 시간 만들기"></property>
+
+        <!-- GENERIC APP ERROR MESSAGES -->
+        <property name="APP_ERROR_TITLE"            value="어플리케이션 에러"></property>
+        <property name="APP_ERROR_CONTENT"          value="어플리케이션에 에러가 발생했습니다"></property>
+
+        <!-- PROPERTIES ERROR MESSAGES -->
+        <property name="PROPERTIES_ERROR_TITLE"     value="Properties File 에러"></property>
+        <property name="PROPERTIES_ERROR_CONTENT"   value="Properties File 로딩 에러가 발생했습니다"></property>
+
+        <!-- FILE TOOLBAR TOOLTIPS -->
+        <property name="NEW_BUTTON_TOOLTIP"         value="새 오피스 시간"></property>
+        <property name="LOAD_BUTTON_TOOLTIP"        value="오피스 시간 부르기"></property>
+        <property name="CLOSE_BUTTON_TOOLTIP"       value="오피스 시간 닫기"></property>
+        <property name="SAVE_BUTTON_TOOLTIP"        value="오피스 시간 저장하기"></property>
+        <property name="EXPORT_BUTTON_TOOLTIP"      value="오피스 시간 이출하기"></property>
+        <property name="EXIT_BUTTON_TOOLTIP"        value="닫기"></property>
+
+        <!-- CLIPBOARD TOOLBAR TOOLTIPS -->
+        <property name="CUT_BUTTON_TOOLTIP"         value="자르기"></property>
+        <property name="COPY_BUTTON_TOOLTIP"        value="복사하기"></property>
+        <property name="PASTE_BUTTON_TOOLTIP"       value="붙여넣기"></property>
+
+        <!-- UNDO TOOLBAR TOOLTIPS -->
+        <property name="UNDO_BUTTON_TOOLTIP"        value="되돌아가기"></property>
+        <property name="REDO_BUTTON_TOOLTIP"        value="다시하기"></property>
+
+        <!-- HELP TOOLBAR TOOLTIPS -->
+        <property name="HELP_BUTTON_TOOLTIP"        value="도움말"></property>
+        <property name="LANGUAGE_BUTTON_TOOLTIP"    value="언어 변경"></property>
+        <property name="ABOUT_BUTTON_TOOLTIP"       value="대하여"></property>
+
+        <!-- NEW FEEDBACK DIALOGS -->	
+        <property name="NEW_SUCCESS_TITLE"      value="새로만들기 성공"></property>
+        <property name="NEW_SUCCESS_CONTENT"	value="작업이 생성되었으나 저장되지 않음"></property>
+        <property name="NEW_ERROR_TITLE"        value="경고: 에러"></property>
+        <property name="NEW_ERROR_CONTENT"      value="작업 생성중 에러가 발생했습니다."></property>
+
+        <!-- LOAD FEEDBACK DIALOGS -->
+        <property name="LOAD_WORK_TITLE"        value="작업 부르기"></property>
+        <property name="LOAD_SUCCESS_TITLE"     value="부르기 성공"></property>
+        <property name="LOAD_SUCCESS_CONTENT"   value="파일이 성공적으로 불려왔으며 변경할 수 있습니다."></property>
+        <property name="LOAD_ERROR_TITLE"       value="부르기 에러"></property>        
+        <property name="LOAD_ERROR_CONTENT"     value="부르기에 실패했습니다. 파일포멧에 문제가 있을 가능성이 큽니다."></property>
+
+        <!-- SAVE FEEDBACK DIALOGS -->
+        <property name="SAVE_WORK_TITLE"        value="작업 저장"></property>
+        <property name="SAVE_SUCCESS_TITLE"     value="저장 성공"></property>
+        <property name="SAVE_SUCCESS_CONTENT"   value="파일이 저장되었습니다."></property>
+        <property name="SAVE_ERROR_TITLE"       value="저장 에러"></property>
+        <property name="SAVE_ERROR_CONTENT"     value="저장에 실패했습니다. 파일접근에 문제가 있을 가능성이 큽니다."></property>
+        <property name="SAVE_VERIFY_TITLE"	value="저장되지 않은 작업을 저장합니까?"></property>
+        <property name="SAVE_VERIFY_CONTENT"	value="저장되지 않은 작업을 우선 저장하시겠습니까?"></property>
+
+        <!-- ABOUT DIALOG -->
+        <property name="ABOUT_TITLE"            value="OH에 대해서"></property>
+        <property name="ABOUT_CONTENT"          value="OH, 오피스 시간 매니저 - Debugging Enterprises - © 2018"></property>
+
+
+        <!-- ENGLISH LANGUAGE SETTINGS SPECIFICALLY FOR TDLM CONTROLS -->
+
+        <!-- LANGUAGE-DEPENDENT TEXT FOR OH WORKSPACE CONTROLS -->
+        <property name="OH_TAS_HEADER_LABEL_TEXT"           value="조교들"></property>
+        <property name="OH_ADD_TA_BUTTON_TEXT"              value="조교 추가"></property>
+        <property name="OH_OFFICE_HOURS_HEADER_LABEL_TEXT"  value="오피스 시간"></property>
+        <property name="OH_NAME_TABLE_COLUMN_TEXT"          value="이름"></property>
+        <property name="OH_EMAIL_TABLE_COLUMN_TEXT"         value="이메일"></property>
+        <property name="OH_NAME_BUTTON_TEXT"		    value="이름"></property>
+        <property name="OH_EMAIL_BUTTON_TEXT"		    value="이메일"></property>
+        <property name="OH_SLOTS_TABLE_COLUMN_TEXT"         value="타임슬롯"></property>
+        <property name="OH_START_TIME_TABLE_COLUMN_TEXT"    value="시작시간"></property>
+        <property name="OH_END_TIME_TABLE_COLUMN_TEXT"      value="종료시간"></property>
+        <property name="OH_MONDAY_TABLE_COLUMN_TEXT"        value="월"></property>
+        <property name="OH_TUESDAY_TABLE_COLUMN_TEXT"       value="화"></property>
+        <property name="OH_WEDNESDAY_TABLE_COLUMN_TEXT"     value="수"></property>
+        <property name="OH_THURSDAY_TABLE_COLUMN_TEXT"      value="목"></property>
+        <property name="OH_FRIDAY_TABLE_COLUMN_TEXT"        value="금"></property>
+
+	<!-- ADD TA ERROR MESSAGES -->
+	<property name="OH_CANNOT_ADD_TA_TITLE_LABEL"	value="TA를 추가할 수 없습니다."></property>
+	<property name="OH_NOT_UNIQUE_NAME_MESSAGE"	value="는 이미 존재합니다."></property>
+	<property name="OH_NOT_UNIQUE_EMAIL_MESSAGE"	value="는 이미 사용되었습니다."></property>
+	<property name="OH_INVALID_EMAIL_FORMAT_MESSAGE"	value="는 올바른 형식의 이메일이 아닙니다."></property>
+
+        <!-- TO SWITCH BACK TO ANOTHER LANGUAGE -->
+        <property name="LANGUAGE_DIALOG_TITLE"          value="앱 언어선택"></property>
+        <property name="LANGUAGE_DIALOG_HEADER_TEXT"    value="언어를 선택하세요"></property>
+        <property name="LANGUAGE_DIALOG_CONTENT_TEXT"   value="유저 인터페이스의 언어를 선택하세요."></property>
+	<!-- does this part needs to be changed-->
+        <property name="WORK_FILE_EXT"          value="*.json"></property>
+	<property name="WORK_FILE_EXT_DESC"     value="조교파일 (*json)"></property>
+
+    </property_list>
+    
+    <property_options_list>
+        <property_options name="LANGUAGE_OPTIONS">
+            <option>한국어</option>
+        </property_options>
+    </property_options_list>
+</properties>
