@@ -36,18 +36,8 @@ public class TimeSlot {
     }
 
     // ACCESSORS AND MUTATORS
-    public boolean addTA(String day, TeachingAssistantPrototype ta){
-        if (tas.get(DayOfWeek.valueOf(day)).contains(ta)){
-            return false;
-        }
-        tas.get(DayOfWeek.valueOf(day)).add(ta);
-        dayText.get(DayOfWeek.valueOf(day)).setValue(
-                tas.get(DayOfWeek.valueOf(day))
-                        .stream()
-                        .map(a -> String.valueOf(a.getName()))
-                        .collect(Collectors.joining("\n")));
-        ta.setSlot(ta.getSlot()+1);
-        return true;
+    public boolean dowContainsTa(DayOfWeek dow, TeachingAssistantPrototype ta){
+        return tas.get(dow).contains(ta);
     }
     
     public boolean addTA(DayOfWeek dow, TeachingAssistantPrototype ta){
@@ -61,6 +51,7 @@ public class TimeSlot {
                         .map(a -> String.valueOf(a.getName()))
                         .collect(Collectors.joining("\n")));
         ta.setSlot(ta.getSlot()+1);
+        
         return true;
     }
     

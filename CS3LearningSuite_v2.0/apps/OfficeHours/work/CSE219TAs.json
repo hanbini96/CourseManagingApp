@@ -171,6 +171,11 @@
         },
         {
             "time":"10_00am",
+            "day":"MONDAY",
+            "name":"Heng An Lin"
+        },
+        {
+            "time":"10_00am",
             "day":"WEDNESDAY",
             "name":"Melanie Logan"
         },
@@ -183,6 +188,11 @@
             "time":"10_00am",
             "day":"TUESDAY",
             "name":"Jane Hu"
+        },
+        {
+            "time":"10_00am",
+            "day":"TUESDAY",
+            "name":"Heng An Lin"
         },
         {
             "time":"10_30am",
@@ -198,6 +208,11 @@
             "time":"10_30am",
             "day":"FRIDAY",
             "name":"Xiangying Liu"
+        },
+        {
+            "time":"10_30am",
+            "day":"TUESDAY",
+            "name":"Heng An Lin"
         },
         {
             "time":"11_00am",

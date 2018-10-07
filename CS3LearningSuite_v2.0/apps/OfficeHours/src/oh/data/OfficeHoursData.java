@@ -182,7 +182,7 @@ public class OfficeHoursData implements AppDataComponent {
     // MANAGE OFFICE HOURS
     public void addOH(String time, String day, TeachingAssistantPrototype ta) {
         TimeSlot slot = getTimeSlot(time);
-        slot.addTA(day, ta);
+        slot.addTA(TimeSlot.DayOfWeek.valueOf(day), ta);
     }
     
     public void removeOH(String time, String day, TeachingAssistantPrototype ta) {

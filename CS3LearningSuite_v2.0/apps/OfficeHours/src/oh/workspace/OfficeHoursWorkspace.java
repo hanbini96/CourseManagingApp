@@ -69,7 +69,7 @@ public class OfficeHoursWorkspace extends AppWorkspaceComponent {
         emailColumn.prefWidthProperty().bind(taTable.widthProperty().multiply(2.0/4.0));
         
         TableColumn slotColumn = ohBuilder.buildTableColumn(OH_SLOTS_TABLE_COLUMN, taTable, CLASS_OH_COLUMN_TIMESLOT);
-        slotColumn.setCellValueFactory(new PropertyValueFactory<String, String>("timeslot"));
+        slotColumn.setCellValueFactory(new PropertyValueFactory<String, Integer>("timeslot"));
         slotColumn.prefWidthProperty().bind(taTable.widthProperty().multiply(1.0/4.0));
         
         // ADD BOX FOR ADDING A TA
@@ -114,7 +114,7 @@ public class OfficeHoursWorkspace extends AppWorkspaceComponent {
         }
         
         // enable cell selection
-        officeHoursTable.getSelectionModel().cellSelectionEnabledProperty().setValue(ENABLED);
+        officeHoursTable.getSelectionModel().setCellSelectionEnabled(ENABLED);
 
         // MAKE SURE IT'S THE TABLE THAT ALWAYS GROWS IN THE LEFT PANE
         VBox.setVgrow(officeHoursTable, Priority.ALWAYS);
@@ -142,7 +142,6 @@ public class OfficeHoursWorkspace extends AppWorkspaceComponent {
         officeHoursTableView.setOnMouseClicked(e -> {
             if (taTableView.getSelectionModel().getSelectedItem() != null) {
                 controller.processClickOH(taTableView.getSelectionModel().getSelectedItem());
-                officeHoursTableView.refresh();
             }
         });
         

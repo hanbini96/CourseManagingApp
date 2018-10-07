@@ -36,10 +36,10 @@ public class OfficeHoursDialog extends Stage{
         }
         Alert alert = new Alert(Alert.AlertType.ERROR);
             
-            alert.setTitle(props.getProperty(NEW_ERROR_TITLE));
-            alert.setHeaderText(props.getProperty(OH_CANNOT_ADD_TA_TITLE_LABEL));
-            alert.setContentText(errorMsg);
-            alert.setResizable(true);
-            alert.showAndWait();
+        alert.setTitle(props.getProperty(NEW_ERROR_TITLE));
+        alert.setHeaderText(props.getProperty(OH_CANNOT_ADD_TA_TITLE_LABEL));
+        alert.setContentText(errorMsg);
+        alert.setResizable(true);
+        alert.showAndWait();
     }
 }

@@ -3,12 +3,12 @@ package oh.workspace.controllers;
 import djf.modules.AppGUIModule;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import oh.OfficeHoursApp;
 import static oh.OfficeHoursPropertyType.OH_NAME_TEXT_FIELD;
 import static oh.OfficeHoursPropertyType.OH_EMAIL_TEXT_FIELD;
+import static oh.OfficeHoursPropertyType.OH_OFFICE_HOURS_TABLE_VIEW;
 import oh.data.OfficeHoursData;
 import oh.data.TeachingAssistantPrototype;
 import oh.data.TimeSlot;
@@ -61,11 +61,13 @@ public class OfficeHoursController {
     }
     
     public void processClickOH(TeachingAssistantPrototype ta) {
+        AppGUIModule gui = app.getGUIModule();
+        TableView ohTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
         OfficeHoursData data = (OfficeHoursData) app.getDataComponent();
         int col = data.getSelectedColumn();
         if (data.isDayOfWeekColumn(col)){
             TimeSlot slot = data.getSelectedSlot();
-            ClickOH_Transaction clickOHTansaction = new ClickOH_Transaction(data, ta, slot, col);
+            ClickOH_Transaction clickOHTansaction = new ClickOH_Transaction(ohTableView, data, ta, slot, col);
             app.processTransaction(clickOHTansaction);
         }
     }
