@@ -76,6 +76,11 @@
         },
         {
             "time":"8_00am",
+            "day":"TUESDAY",
+            "name":"Xiangying Liu"
+        },
+        {
+            "time":"8_00am",
             "day":"WEDNESDAY",
             "name":"Zengxian Lin"
         },
@@ -90,14 +95,14 @@
             "name":"Lei Song"
         },
         {
-            "time":"8_00am",
-            "day":"TUESDAY",
-            "name":"Xiangying Liu"
-        },
-        {
             "time":"8_30am",
             "day":"MONDAY",
             "name":"Lei Song"
+        },
+        {
+            "time":"8_30am",
+            "day":"TUESDAY",
+            "name":"Xiangying Liu"
         },
         {
             "time":"8_30am",
@@ -115,14 +120,14 @@
             "name":"Lei Song"
         },
         {
-            "time":"8_30am",
-            "day":"TUESDAY",
-            "name":"Xiangying Liu"
-        },
-        {
             "time":"9_00am",
             "day":"MONDAY",
             "name":"Lei Song"
+        },
+        {
+            "time":"9_00am",
+            "day":"TUESDAY",
+            "name":"Xiangying Liu"
         },
         {
             "time":"9_00am",
@@ -140,14 +145,14 @@
             "name":"Lei Song"
         },
         {
-            "time":"9_00am",
-            "day":"TUESDAY",
-            "name":"Xiangying Liu"
-        },
-        {
             "time":"9_30am",
             "day":"MONDAY",
             "name":"Lei Song"
+        },
+        {
+            "time":"9_30am",
+            "day":"TUESDAY",
+            "name":"Jane Hu"
         },
         {
             "time":"9_30am",
@@ -156,15 +161,15 @@
         },
         {
             "time":"9_30am",
+            "day":"THURSDAY",
+            "name":"Michael Spadafora"
+        },
+        {
+            "time":"9_30am",
             "day":"FRIDAY",
             "name":"Lei Song"
         },
         {
-            "time":"9_30am",
-            "day":"TUESDAY",
-            "name":"Jane Hu"
-        },
-        {
             "time":"10_00am",
             "day":"MONDAY",
             "name":"Melanie Logan"
@@ -173,16 +178,6 @@
             "time":"10_00am",
             "day":"MONDAY",
             "name":"Heng An Lin"
-        },
-        {
-            "time":"10_00am",
-            "day":"WEDNESDAY",
-            "name":"Melanie Logan"
-        },
-        {
-            "time":"10_00am",
-            "day":"FRIDAY",
-            "name":"Xiangying Liu"
         },
         {
             "time":"10_00am",
@@ -195,19 +190,29 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"10_30am",
-            "day":"MONDAY",
-            "name":"Melanie Logan"
+            "time":"10_00am",
+            "day":"TUESDAY",
+            "name":"Qihong Jiang"
         },
         {
-            "time":"10_30am",
+            "time":"10_00am",
             "day":"WEDNESDAY",
             "name":"Melanie Logan"
         },
         {
-            "time":"10_30am",
+            "time":"10_00am",
+            "day":"WEDNESDAY",
+            "name":"Qihong Jiang"
+        },
+        {
+            "time":"10_00am",
             "day":"FRIDAY",
             "name":"Xiangying Liu"
+        },
+        {
+            "time":"10_30am",
+            "day":"MONDAY",
+            "name":"Melanie Logan"
         },
         {
             "time":"10_30am",
@@ -215,9 +220,34 @@
             "name":"Heng An Lin"
         },
         {
+            "time":"10_30am",
+            "day":"WEDNESDAY",
+            "name":"Melanie Logan"
+        },
+        {
+            "time":"10_30am",
+            "day":"THURSDAY",
+            "name":"Qihong Jiang"
+        },
+        {
+            "time":"10_30am",
+            "day":"FRIDAY",
+            "name":"Xiangying Liu"
+        },
+        {
             "time":"11_00am",
             "day":"MONDAY",
             "name":"Melanie Logan"
+        },
+        {
+            "time":"11_00am",
+            "day":"TUESDAY",
+            "name":"Lei Song"
+        },
+        {
+            "time":"11_00am",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"11_00am",
@@ -226,8 +256,33 @@
         },
         {
             "time":"11_00am",
+            "day":"THURSDAY",
+            "name":"Qihong Jiang"
+        },
+        {
+            "time":"11_00am",
             "day":"FRIDAY",
             "name":"Xiangying Liu"
+        },
+        {
+            "time":"11_30am",
+            "day":"MONDAY",
+            "name":"Lei Song"
+        },
+        {
+            "time":"11_30am",
+            "day":"MONDAY",
+            "name":"Mankirat Gulati"
+        },
+        {
+            "time":"11_30am",
+            "day":"TUESDAY",
+            "name":"Michael Spadafora"
+        },
+        {
+            "time":"11_30am",
+            "day":"TUESDAY",
+            "name":"Lei Song"
         },
         {
             "time":"11_30am",
@@ -240,14 +295,19 @@
             "name":"Xiangying Liu"
         },
         {
-            "time":"11_30am",
+            "time":"12_00pm",
+            "day":"MONDAY",
+            "name":"Zihao Wang"
+        },
+        {
+            "time":"12_00pm",
             "day":"TUESDAY",
             "name":"Michael Spadafora"
         },
         {
             "time":"12_00pm",
-            "day":"MONDAY",
-            "name":"Zihao Wang"
+            "day":"TUESDAY",
+            "name":"Lei Song"
         },
         {
             "time":"12_00pm",
@@ -270,14 +330,19 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"12_00pm",
-            "day":"TUESDAY",
-            "name":"Michael Spadafora"
-        },
-        {
             "time":"12_30pm",
             "day":"MONDAY",
             "name":"Zihao Wang"
+        },
+        {
+            "time":"12_30pm",
+            "day":"TUESDAY",
+            "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"12_30pm",
+            "day":"TUESDAY",
+            "name":"Jane Hu"
         },
         {
             "time":"12_30pm",
@@ -295,19 +360,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"12_30pm",
-            "day":"TUESDAY",
-            "name":"Anghel De Las Casas"
-        },
-        {
-            "time":"12_30pm",
-            "day":"TUESDAY",
-            "name":"Jane Hu"
-        },
-        {
             "time":"1_00pm",
             "day":"MONDAY",
             "name":"Zihao Wang"
+        },
+        {
+            "time":"1_00pm",
+            "day":"TUESDAY",
+            "name":"Anghel De Las Casas"
         },
         {
             "time":"1_00pm",
@@ -318,11 +378,6 @@
             "time":"1_00pm",
             "day":"FRIDAY",
             "name":"Heng An Lin"
-        },
-        {
-            "time":"1_00pm",
-            "day":"TUESDAY",
-            "name":"Anghel De Las Casas"
         },
         {
             "time":"1_30pm",
@@ -331,18 +386,23 @@
         },
         {
             "time":"1_30pm",
-            "day":"FRIDAY",
-            "name":"Heng An Lin"
+            "day":"TUESDAY",
+            "name":"Anghel De Las Casas"
         },
         {
             "time":"1_30pm",
-            "day":"TUESDAY",
-            "name":"Anghel De Las Casas"
+            "day":"FRIDAY",
+            "name":"Heng An Lin"
         },
         {
             "time":"2_00pm",
             "day":"MONDAY",
             "name":"Sammi Wu Leung"
+        },
+        {
+            "time":"2_00pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"2_00pm",
@@ -355,14 +415,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"2_00pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"2_30pm",
             "day":"MONDAY",
             "name":"Sammi Wu Leung"
+        },
+        {
+            "time":"2_30pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"2_30pm",
@@ -385,14 +445,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"2_30pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"3_00pm",
             "day":"MONDAY",
             "name":"Sammi Wu Leung"
+        },
+        {
+            "time":"3_00pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"3_00pm",
@@ -425,14 +485,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"3_00pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"3_30pm",
             "day":"MONDAY",
             "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"3_30pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"3_30pm",
@@ -460,14 +520,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"3_30pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"4_00pm",
             "day":"MONDAY",
             "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"4_00pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"4_00pm",
@@ -500,14 +560,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"4_00pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"4_30pm",
             "day":"MONDAY",
             "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"4_30pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"4_30pm",
@@ -535,14 +595,14 @@
             "name":"Heng An Lin"
         },
         {
-            "time":"4_30pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"5_00pm",
             "day":"MONDAY",
             "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"5_00pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"5_00pm",
@@ -560,14 +620,14 @@
             "name":"Zengxian Lin"
         },
         {
-            "time":"5_00pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"5_30pm",
             "day":"MONDAY",
             "name":"Anghel De Las Casas"
+        },
+        {
+            "time":"5_30pm",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
         },
         {
             "time":"5_30pm",
@@ -585,14 +645,14 @@
             "name":"Zengxian Lin"
         },
         {
-            "time":"5_30pm",
-            "day":"TUESDAY",
-            "name":"Mankirat Gulati"
-        },
-        {
             "time":"6_00pm",
             "day":"MONDAY",
             "name":"Xiaoxiao Liu"
+        },
+        {
+            "time":"6_00pm",
+            "day":"TUESDAY",
+            "name":"Sammi Wu Leung"
         },
         {
             "time":"6_00pm",
@@ -610,14 +670,14 @@
             "name":"Zengxian Lin"
         },
         {
-            "time":"6_00pm",
-            "day":"TUESDAY",
-            "name":"Sammi Wu Leung"
-        },
-        {
             "time":"6_30pm",
             "day":"MONDAY",
             "name":"Xiaoxiao Liu"
+        },
+        {
+            "time":"6_30pm",
+            "day":"TUESDAY",
+            "name":"Sammi Wu Leung"
         },
         {
             "time":"6_30pm",
@@ -635,14 +695,14 @@
             "name":"Zengxian Lin"
         },
         {
-            "time":"6_30pm",
-            "day":"TUESDAY",
-            "name":"Sammi Wu Leung"
-        },
-        {
             "time":"7_00pm",
             "day":"MONDAY",
             "name":"Xiaoxiao Liu"
+        },
+        {
+            "time":"7_00pm",
+            "day":"TUESDAY",
+            "name":"Sammi Wu Leung"
         },
         {
             "time":"7_00pm",
@@ -660,14 +720,14 @@
             "name":"Zengxian Lin"
         },
         {
-            "time":"7_00pm",
-            "day":"TUESDAY",
-            "name":"Sammi Wu Leung"
-        },
-        {
             "time":"7_30pm",
             "day":"MONDAY",
             "name":"Xiaoxiao Liu"
+        },
+        {
+            "time":"7_30pm",
+            "day":"TUESDAY",
+            "name":"Sammi Wu Leung"
         },
         {
             "time":"7_30pm",
@@ -683,16 +743,16 @@
             "time":"7_30pm",
             "day":"FRIDAY",
             "name":"Zengxian Lin"
-        },
-        {
-            "time":"7_30pm",
-            "day":"TUESDAY",
-            "name":"Sammi Wu Leung"
         },
         {
             "time":"8_00pm",
             "day":"MONDAY",
             "name":"Xiaoxiao Liu"
+        },
+        {
+            "time":"8_00pm",
+            "day":"TUESDAY",
+            "name":"Zihao Wang"
         },
         {
             "time":"8_00pm",
@@ -708,11 +768,6 @@
             "time":"8_00pm",
             "day":"FRIDAY",
             "name":"Stephen Chen"
-        },
-        {
-            "time":"8_00pm",
-            "day":"TUESDAY",
-            "name":"Zihao Wang"
         },
         {
             "time":"8_30pm",

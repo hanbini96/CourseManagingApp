@@ -2,8 +2,10 @@ package oh.data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.stream.Collectors;
-import javafx.beans.binding.Bindings;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -22,6 +24,7 @@ public class TimeSlot {
     private StringProperty endTime;
     private HashMap<DayOfWeek, ArrayList<TeachingAssistantPrototype>> tas;
     private HashMap<DayOfWeek, StringProperty> dayText;
+    //private HashMap<DayOfWeek, BooleanProperty> taSelected;
     
 
     public TimeSlot(String initStartTime, String initEndTime) {
@@ -32,10 +35,19 @@ public class TimeSlot {
         for (DayOfWeek dow : DayOfWeek.values()) {
             tas.put(dow, new ArrayList());
             dayText.put(dow, new SimpleStringProperty());
+            //taSelected.put(dow, new SimpleBooleanProperty(false));
         }
     }
 
-    // ACCESSORS AND MUTATORS
+    public void toogleTA(DayOfWeek dow, TeachingAssistantPrototype ta){
+        if (!dowContainsTa(dow, ta)){
+            addTA(dow, ta);
+        }
+        else{
+            removeTA(dow, ta);
+        }
+    }
+    
     public boolean dowContainsTa(DayOfWeek dow, TeachingAssistantPrototype ta){
         return tas.get(dow).contains(ta);
     }
@@ -45,27 +57,9 @@ public class TimeSlot {
             return false;
         }
         tas.get(dow).add(ta);
-        dayText.get(dow).setValue(
-                tas.get(dow)
-                        .stream()
-                        .map(a -> String.valueOf(a.getName()))
-                        .collect(Collectors.joining("\n")));
+        updateDayText(dow);
         ta.setSlot(ta.getSlot()+1);
         
-        return true;
-    }
-    
-    public boolean removeTA(String day, TeachingAssistantPrototype ta){
-        if (!tas.get(DayOfWeek.valueOf(day)).contains(ta)){
-            return false;
-        }
-        tas.get(DayOfWeek.valueOf(day)).remove(ta);
-        dayText.get(DayOfWeek.valueOf(day)).setValue(
-                tas.get(DayOfWeek.valueOf(day))
-                        .stream()
-                        .map(a -> String.valueOf(a.getName()))
-                        .collect(Collectors.joining("\n")));
-        ta.setSlot(ta.getSlot()-1);
         return true;
     }
     
@@ -74,19 +68,31 @@ public class TimeSlot {
             return false;
         }
         tas.get(dow).remove(ta);
+        updateDayText(dow);
+        ta.setSlot(ta.getSlot()-1);
+        return true;
+    }
+    
+    private void updateDayText(DayOfWeek dow){
         dayText.get(dow).setValue(
                 tas.get(dow)
                         .stream()
                         .map(a -> String.valueOf(a.getName()))
                         .collect(Collectors.joining("\n")));
-        ta.setSlot(ta.getSlot()-1);
-        return true;
     }
     
+    // HIGHLIGHT THE CELL
+    public void highlightOH(DayOfWeek dow){
+        //taSelected.get(dow).setValue(Boolean.TRUE);
+    }
     
+    public void unhighlightOH(DayOfWeek dow){
+        //taSelected.get(dow).setValue(Boolean.FALSE);
+    }
     
-    public HashMap<DayOfWeek, ArrayList<TeachingAssistantPrototype>> getTA(){
-        return tas;
+    // ACCESSORS AND MUTATORS
+    public Iterator<TeachingAssistantPrototype> getTAsIterator(DayOfWeek dow){
+        return tas.get(dow).iterator();
     }
     
 
@@ -127,11 +133,11 @@ public class TimeSlot {
     }
     
     public String getTuesday() {
-        return dayText.get(DayOfWeek.MONDAY).getValue();
+        return dayText.get(DayOfWeek.TUESDAY).getValue();
     }
     
     public void setTuesday(String initTuesday) {
-        dayText.get(DayOfWeek.MONDAY).setValue(initTuesday);
+        dayText.get(DayOfWeek.TUESDAY).setValue(initTuesday);
     }
     
     public StringProperty tuesdayProperty() {
@@ -139,11 +145,11 @@ public class TimeSlot {
     }
     
     public String getWednesday() {
-        return dayText.get(DayOfWeek.MONDAY).getValue();
+        return dayText.get(DayOfWeek.WEDNESDAY).getValue();
     }
     
     public void setWednesday(String initWednesday) {
-        dayText.get(DayOfWeek.MONDAY).setValue(initWednesday);
+        dayText.get(DayOfWeek.WEDNESDAY).setValue(initWednesday);
     }
     
     public StringProperty wednesdayProperty() {
@@ -151,11 +157,11 @@ public class TimeSlot {
     }
     
     public String getThursday() {
-        return dayText.get(DayOfWeek.MONDAY).getValue();
+        return dayText.get(DayOfWeek.THURSDAY).getValue();
     }
     
     public void setThursday(String initThursday) {
-        dayText.get(DayOfWeek.MONDAY).setValue(initThursday);
+        dayText.get(DayOfWeek.THURSDAY).setValue(initThursday);
     }
     
     public StringProperty thursdayProperty() {
@@ -163,11 +169,11 @@ public class TimeSlot {
     }
     
     public String getFriday() {
-        return dayText.get(DayOfWeek.MONDAY).getValue();
+        return dayText.get(DayOfWeek.FRIDAY).getValue();
     }
     
     public void setFriday(String initFriday) {
-        dayText.get(DayOfWeek.MONDAY).setValue(initFriday);
+        dayText.get(DayOfWeek.FRIDAY).setValue(initFriday);
     }
     
     public StringProperty fridayProperty() {
@@ -178,6 +184,7 @@ public class TimeSlot {
         for (DayOfWeek dow : DayOfWeek.values()) {
             tas.get(dow).clear();
             dayText.get(dow).setValue("");
+            //taSelected.get(dow).setValue(Boolean.FALSE);
         }
     }
 }

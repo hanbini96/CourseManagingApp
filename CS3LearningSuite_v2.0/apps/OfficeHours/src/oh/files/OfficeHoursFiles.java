@@ -12,7 +12,6 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -89,7 +88,8 @@ public class OfficeHoursFiles implements AppFileComponent {
             String day = jsonHO.getString(JSON_DAY_OF_WEEK);
             String name = jsonHO.getString(JSON_NAME);
             TeachingAssistantPrototype ta = dataManager.getTAWithName(name);
-            dataManager.addOH(time, day, ta);
+            TimeSlot ts = dataManager.getTimeSlot(time);
+            ts.addTA(DayOfWeek.valueOf(day), ta);
         }
     }
       
@@ -124,18 +124,19 @@ public class OfficeHoursFiles implements AppFileComponent {
 	JsonArrayBuilder ohArrayBuilder = Json.createArrayBuilder();
         Iterator<TimeSlot> ohsIterator = dataManager.officeHoursIterator();
         while (ohsIterator.hasNext()) {
-            TimeSlot oh = ohsIterator.next();
-            HashMap<DayOfWeek, ArrayList<TeachingAssistantPrototype>> tas = oh.getTA();
-            tas.forEach((k, v)->{
-                v.forEach(ta->{
+            TimeSlot ts = ohsIterator.next();
+            for (DayOfWeek dow : TimeSlot.DayOfWeek.values()){
+                tasIterator = ts.getTAsIterator(dow);
+                while (tasIterator.hasNext()){
+                    TeachingAssistantPrototype ta = tasIterator.next();
                     JsonObject ohJson = Json.createObjectBuilder()
-                            .add(JSON_START_TIME, oh.getStartTime().replace(":", "_"))
-                            .add(JSON_DAY_OF_WEEK, k.toString())
-                            .add(JSON_NAME, ta.getName()).build();
+                        .add(JSON_START_TIME, ts.getStartTime().replace(":", "_"))
+                        .add(JSON_DAY_OF_WEEK, dow.toString())
+                        .add(JSON_NAME, ta.getName()).build();
                     ohArrayBuilder.add(ohJson);
-                });
-            });
-	}
+                }
+            }
+        }
 
         JsonArray officeHoursArray = ohArrayBuilder.build();
         

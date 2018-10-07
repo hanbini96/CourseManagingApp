@@ -5,6 +5,7 @@ import djf.modules.AppFoolproofModule;
 import djf.modules.AppGUIModule;
 import static djf.modules.AppGUIModule.ENABLED;
 import djf.ui.AppNodesBuilder;
+import javafx.css.PseudoClass;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.SelectionMode;
@@ -109,9 +110,13 @@ public class OfficeHoursWorkspace extends AppWorkspaceComponent {
         wednesdayColumn.setCellValueFactory(new PropertyValueFactory<String, String>("wednesday"));
         thursdayColumn.setCellValueFactory(new PropertyValueFactory<String, String>("thursday"));
         fridayColumn.setCellValueFactory(new PropertyValueFactory<String, String>("friday"));
+        
+        //PseudoClass TAselected = PseudoClass.getPseudoClass("TAselected");
         for (int i = 0; i < officeHoursTable.getColumns().size(); i++) {
             ((TableColumn)officeHoursTable.getColumns().get(i)).prefWidthProperty().bind(officeHoursTable.widthProperty().multiply(1.0/7.0));
         }
+        
+        
         
         // enable cell selection
         officeHoursTable.getSelectionModel().setCellSelectionEnabled(ENABLED);
@@ -132,22 +137,31 @@ public class OfficeHoursWorkspace extends AppWorkspaceComponent {
         OfficeHoursController controller = new OfficeHoursController((OfficeHoursApp) app);
         AppGUIModule gui = app.getGUIModule();
         
+        TableView officeHoursTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
+        TableView<TeachingAssistantPrototype> taTableView = (TableView)gui.getGUINode(OH_TAS_TABLE_VIEW);
+        
+        // ADD TA BUTTON
         ((Button) gui.getGUINode(OH_ADD_TA_BUTTON)).setOnAction(e -> {
             controller.processAddTA();
         });
         
-        TableView officeHoursTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
-        TableView<TeachingAssistantPrototype> taTableView = (TableView)gui.getGUINode(OH_TAS_TABLE_VIEW);
+        // HIGHLIGHT SELECTED TAS
+        taTableView.setOnMouseClicked(e -> {
+            controller.processTASelected();
+        });
         
+        // TOGGLE TA
         officeHoursTableView.setOnMouseClicked(e -> {
-            if (taTableView.getSelectionModel().getSelectedItem() != null) {
-                controller.processClickOH(taTableView.getSelectionModel().getSelectedItem());
-            }
+            controller.processClickOH();            
         });
         
         // DON'T LET ANYONE SORT THE TABLES
         for (int i = 0; i < officeHoursTableView.getColumns().size(); i++) {
             ((TableColumn)officeHoursTableView.getColumns().get(i)).setSortable(false);
+        }
+        
+        for (int i = 0; i < taTableView.getColumns().size(); i++) {
+            ((TableColumn)taTableView.getColumns().get(i)).setSortable(false);
         }
     }
 

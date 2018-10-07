@@ -1,6 +1,7 @@
 package oh.workspace.controllers;
 
 import djf.modules.AppGUIModule;
+import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.scene.control.TableView;
@@ -9,6 +10,7 @@ import oh.OfficeHoursApp;
 import static oh.OfficeHoursPropertyType.OH_NAME_TEXT_FIELD;
 import static oh.OfficeHoursPropertyType.OH_EMAIL_TEXT_FIELD;
 import static oh.OfficeHoursPropertyType.OH_OFFICE_HOURS_TABLE_VIEW;
+import static oh.OfficeHoursPropertyType.OH_TAS_TABLE_VIEW;
 import oh.data.OfficeHoursData;
 import oh.data.TeachingAssistantPrototype;
 import oh.data.TimeSlot;
@@ -60,15 +62,18 @@ public class OfficeHoursController {
         emailTF.requestFocus();
     }
     
-    public void processClickOH(TeachingAssistantPrototype ta) {
+    public void processClickOH() {
         AppGUIModule gui = app.getGUIModule();
-        TableView ohTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
+        TableView<TimeSlot> ohTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
+        TableView<TeachingAssistantPrototype> taTableView = (TableView)gui.getGUINode(OH_TAS_TABLE_VIEW);
         OfficeHoursData data = (OfficeHoursData) app.getDataComponent();
+        TeachingAssistantPrototype ta = taTableView.getSelectionModel().getSelectedItem();
         int col = data.getSelectedColumn();
-        if (data.isDayOfWeekColumn(col)){
+        if (data.isDayOfWeekColumn(col) && taTableView.getSelectionModel().getSelectedItem() != null) {
             TimeSlot slot = data.getSelectedSlot();
-            ClickOH_Transaction clickOHTansaction = new ClickOH_Transaction(ohTableView, data, ta, slot, col);
+            ClickOH_Transaction clickOHTansaction = new ClickOH_Transaction(data, ta, slot, data.getColumnDayOfWeek(col));
             app.processTransaction(clickOHTansaction);
+            ohTableView.refresh();
         }
     }
     
@@ -82,5 +87,29 @@ public class OfficeHoursController {
     
     private boolean emailIsUnique(String email, OfficeHoursData data){
         return data.getTAWithEmail(email) == null;
+    }
+
+    // PROCESS TA BEING SELECTED
+    public void processTASelected() {
+        AppGUIModule gui = app.getGUIModule();
+        OfficeHoursData dataManager = (OfficeHoursData) app.getDataComponent();
+        TableView<TimeSlot> ohTableView = (TableView) gui.getGUINode(OH_OFFICE_HOURS_TABLE_VIEW);
+        TableView<TeachingAssistantPrototype> taTableView = (TableView)gui.getGUINode(OH_TAS_TABLE_VIEW);
+        
+        // IF TA IS SELECTED GET THE APPLIED CELLS AND SET HIGHLIGHTS
+        if (taTableView.getSelectionModel().getSelectedItems() != null){
+            // RESET THE PREVIOUS HIGHLIGHTS
+            TeachingAssistantPrototype ta = taTableView.getSelectionModel().getSelectedItem();
+            // GET APPLYING TIMESLOTS
+            Iterator<TimeSlot> ohsIterator = dataManager.officeHoursIterator();
+            while (ohsIterator.hasNext()){
+                TimeSlot st = ohsIterator.next();
+                for (TimeSlot.DayOfWeek dow: TimeSlot.DayOfWeek.values()){
+                    if (st.dowContainsTa(dow, ta)){
+                        ohTableView.get;
+                    }
+                }
+            }
+        }
     }
 }

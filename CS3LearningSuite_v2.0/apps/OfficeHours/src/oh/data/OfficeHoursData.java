@@ -179,17 +179,6 @@ public class OfficeHoursData implements AppDataComponent {
         // AND REMOVE THE TA FROM ALL THEIR OFFICE HOURS
     }
     
-    // MANAGE OFFICE HOURS
-    public void addOH(String time, String day, TeachingAssistantPrototype ta) {
-        TimeSlot slot = getTimeSlot(time);
-        slot.addTA(TimeSlot.DayOfWeek.valueOf(day), ta);
-    }
-    
-    public void removeOH(String time, String day, TeachingAssistantPrototype ta) {
-        TimeSlot slot = getTimeSlot(time);
-        slot.removeTA(day, ta);
-    }
-    
     public boolean isDayOfWeekColumn(int columnNumber) {
         return columnNumber >= 2;
     }

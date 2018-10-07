@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 import properties_manager.PropertiesManager;
 import djf.AppTemplate;

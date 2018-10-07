@@ -144,6 +144,9 @@
 .oh_office_hours_table_view .column-header{
     -fx-background-color: SWATCH_NEUTRAL;
 }
+.oh_office_hours_table_view .table-cell:TAselected{
+    -fx-background-color: yellow;
+}
 .oh_time_column{
     -fx-background-color: SWATCH_ACCENT;
     -fx-text-fill: white;
