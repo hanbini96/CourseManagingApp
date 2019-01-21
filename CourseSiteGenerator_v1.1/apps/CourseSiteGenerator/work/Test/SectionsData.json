@@ -1,0 +1,35 @@
+
+{
+    "lectures":[
+        {
+            "section":"L01",
+            "days":"Thursday &amp; Tuesdays",
+            "time":"ThTu",
+            "room":"Humanities 1006"
+        }
+    ],
+    "labs":"[]",
+    "recitations":[
+        {
+            "section":"<strong>R06</strong> (McKenna)",
+            "day_time":"Mondays, M",
+            "location":"New CS 115",
+            "ta_1":"Lei Song",
+            "ta_2":"Qihong Jiang"
+        },
+        {
+            "section":"<strong>R07</strong> (McKenna)",
+            "day_time":"Wednesdays, W",
+            "location":"New CS 115",
+            "ta_1":"Mankirat Gulati",
+            "ta_2":"Sammi Wu Leung"
+        },
+        {
+            "section":"<strong>R08</strong> (McKenna)",
+            "day_time":"Wednesdays, W",
+            "location":"New CS 115",
+            "ta_1":"Sammi Wu Leung",
+            "ta_2":"Qihong Jiang"
+        }
+    ]
+}

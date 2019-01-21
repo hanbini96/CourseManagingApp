@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This XML file provides all the text to be used when the application
+    is to be displayed in English.
+-->
+<properties>
+    <property_list>
+
+        <!-- KOREAN LANGUAGE SETTINGS FOR DESKTOP JAVA FRAMEWORK CONTROLS -->
+
+        <!-- WELCOME DIALOG TEXT -->
+        <property name="WELCOME_DIALOG_TITLE"               value="오피스 시간에 들어올때는 마음대로지만 나갈땐 아니란다"></property>
+        <property name="WELCOME_DIALOG_RECENT_WORK_LABEL"   value="최근 작업"></property>
+        <property name="WELCOME_DIALOG_NEW_BUTTON_TEXT"  value="새 오피스 시간 만들기"></property>
+
+        <!-- GENERIC APP ERROR MESSAGES -->
+        <property name="APP_ERROR_TITLE"            value="어플리케이션 에러"></property>
+        <property name="APP_ERROR_CONTENT"          value="어플리케이션에 에러가 발생했습니다"></property>
+
+        <!-- PROPERTIES ERROR MESSAGES -->
+        <property name="PROPERTIES_ERROR_TITLE"     value="Properties File 에러"></property>
+        <property name="PROPERTIES_ERROR_CONTENT"   value="Properties File 로딩 에러가 발생했습니다"></property>
+
+        <!-- FILE TOOLBAR TOOLTIPS -->
+        <property name="NEW_BUTTON_TOOLTIP"         value="새 오피스 시간"></property>
+        <property name="LOAD_BUTTON_TOOLTIP"        value="오피스 시간 부르기"></property>
+        <property name="CLOSE_BUTTON_TOOLTIP"       value="오피스 시간 닫기"></property>
+        <property name="SAVE_BUTTON_TOOLTIP"        value="오피스 시간 저장하기"></property>
+        <property name="EXPORT_BUTTON_TOOLTIP"      value="오피스 시간 이출하기"></property>
+        <property name="EXIT_BUTTON_TOOLTIP"        value="닫기"></property>
+
+        <!-- CLIPBOARD TOOLBAR TOOLTIPS -->
+        <property name="CUT_BUTTON_TOOLTIP"         value="자르기"></property>
+        <property name="COPY_BUTTON_TOOLTIP"        value="복사하기"></property>
+        <property name="PASTE_BUTTON_TOOLTIP"       value="붙여넣기"></property>
+
+        <!-- UNDO TOOLBAR TOOLTIPS -->
+        <property name="UNDO_BUTTON_TOOLTIP"        value="되돌아가기"></property>
+        <property name="REDO_BUTTON_TOOLTIP"        value="다시하기"></property>
+
+        <!-- HELP TOOLBAR TOOLTIPS -->
+        <property name="HELP_BUTTON_TOOLTIP"        value="도움말"></property>
+        <property name="LANGUAGE_BUTTON_TOOLTIP"    value="언어 변경"></property>
+        <property name="ABOUT_BUTTON_TOOLTIP"       value="대하여"></property>
+
+        <!-- NEW FEEDBACK DIALOGS -->	
+        <property name="NEW_SUCCESS_TITLE"      value="새로만들기 성공"></property>
+        <property name="NEW_SUCCESS_CONTENT"	value="작업이 생성되었으나 저장되지 않음"></property>
+        <property name="NEW_ERROR_TITLE"        value="경고: 에러"></property>
+        <property name="NEW_ERROR_CONTENT"      value="작업 생성중 에러가 발생했습니다."></property>
+
+        <!-- LOAD FEEDBACK DIALOGS -->
+        <property name="LOAD_WORK_TITLE"        value="작업 부르기"></property>
+        <property name="LOAD_SUCCESS_TITLE"     value="부르기 성공"></property>
+        <property name="LOAD_SUCCESS_CONTENT"   value="파일이 성공적으로 불려왔으며 변경할 수 있습니다."></property>
+        <property name="LOAD_ERROR_TITLE"       value="부르기 에러"></property>        
+        <property name="LOAD_ERROR_CONTENT"     value="부르기에 실패했습니다. 파일포멧에 문제가 있을 가능성이 큽니다."></property>
+
+        <!-- SAVE FEEDBACK DIALOGS -->
+        <property name="SAVE_WORK_TITLE"        value="작업 저장"></property>
+        <property name="SAVE_SUCCESS_TITLE"     value="저장 성공"></property>
+        <property name="SAVE_SUCCESS_CONTENT"   value="파일이 저장되었습니다."></property>
+        <property name="SAVE_ERROR_TITLE"       value="저장 에러"></property>
+        <property name="SAVE_ERROR_CONTENT"     value="저장에 실패했습니다. 파일접근에 문제가 있을 가능성이 큽니다."></property>
+        <property name="SAVE_VERIFY_TITLE"	value="저장되지 않은 작업을 저장합니까?"></property>
+        <property name="SAVE_VERIFY_CONTENT"	value="저장되지 않은 작업을 우선 저장하시겠습니까?"></property>
+
+        <!-- ABOUT DIALOG -->
+        <property name="ABOUT_TITLE"            value="OH에 대해서"></property>
+        <property name="ABOUT_CONTENT"          value="OH, 오피스 시간 매니저 - Debugging Enterprises - © 2018"></property>
+
+
+        <!-- KOREAN LANGUAGE SETTINGS SPECIFICALLY FOR TDLM CONTROLS -->
+
+        <!-- LANGUAGE-DEPENDENT TEXT FOR OH WORKSPACE CONTROLS -->
+        
+        <!-- CSG TEXT -->
+        <property name="SITE_TAB_TEXT"                          value="사이트"></property>
+        <property name="SYLLABUS_TAB_TEXT"                      value="개요"></property>
+        <property name="MT_TAB_TEXT"                            value="미팅 시간"></property>
+        <property name="OH_TAB_TEXT"                            value="오피스 시간"></property>
+        <property name="SCHEDULE_TAB_TEXT"                      value="일정"></property>
+        
+        
+        <!-- SITE TAB TEXT -->
+        <property name="SITE_BANNER_LABEL_TEXT"                 value="배너"></property>
+        <property name="SITE_SUBJECT_LABEL_TEXT"                value="과목:"></property>
+        <property name="SITE_NUMBER_LABEL_TEXT"                 value="번호:"></property>
+        <property name="SITE_SEMESTER_LABEL_TEXT"               value="학기:"></property>
+        <property name="SITE_YEAR_LABEL_TEXT"                   value="년도:"></property>
+        <property name="SITE_TITLE_LABEL_TEXT"                  value="제목:"></property>
+        <property name="SITE_EXPORTDIR_LABEL_TEXT"              value="추출경로:"></property>
+        
+        <property name="SITE_PAGES_LABEL_TEXT"                  value="페이지"></property>
+        <property name="SITE_HOME_CHECKBOX_TEXT"                value="홈"></property>
+        <property name="SITE_SYLLABUS_CHECKBOX_TEXT"            value="개요"></property>
+        <property name="SITE_SCHEDULE_CHECKBOX_TEXT"            value="일정"></property>
+        <property name="SITE_HWS_CHECKBOX_TEXT"                 value="과제"></property>
+        
+        <property name="SITE_STYLE_LABEL_TEXT"                  value="그타일"></property>
+        <property name="SITE_FAV_ICON_BUTTON_TEXT"              value="파비콘:"></property>
+        <property name="SITE_NAV_BAR_IMAGE_BUTTON_TEXT"         value="매뉴바:"></property>
+        <property name="SITE_LEFT_FOOTER_IMAGE_BUTTON_TEXT"     value="왼쪽 Footer 이미지:"></property>
+        <property name="SITE_RIGHT_FOOTER_IMAGE_BUTTON_TEXT"    value="오른쪽 Footer 이미지:"></property>
+        <property name="SITE_STYLE_SHEET_LABEL_TEXT"            value="폰트/색 스타일 시트:"></property>
+        <property name="SITE_STYLE_NOTE_TEXT"                   value="주의: 스타일 시트는 work/css 경로 아래에 있어야 합니다"></property>
+        
+        <property name="SITE_INSTRUCTOR_LABEL_TEXT"             value="교수"></property>
+        <property name="SITE_NAME_LABEL_TEXT"                   value="이름:"></property>
+        <property name="SITE_ROOM_LABEL_TEXT"                   value="오피스:"></property>
+        <property name="SITE_EMAIL_LABEL_TEXT"                  value="이메일:"></property>
+        <property name="SITE_HOMEPAGE_LABEL_TEXT"               value="홈페이지:"></property>
+        <property name="SITE_OPEN_BUTTON_ICON"                  value="AddItem.png"></property>
+        <property name="SITE_CLOSE_BUTTON_ICON"                 value="RemoveItem.png"></property>
+        <property name="SITE_OFFICE_HOURS_LABEL_TEXT"           value="오피스 시간"></property>
+        
+        <property name="SITE_TEXT"                              value="사이트"></property>
+        
+        <!-- SYLLABUS TAB TEXT -->
+        <property name="SYLL_DESC_LABEL_TEXT"                   value="소개:"></property>
+        <property name="SYLL_TOPICS_LABEL_TEXT"                 value="주제:"></property>
+        <property name="SYLL_PREREQ_LABEL_TEXT"                 value="필요조건:"></property>
+        <property name="SYLL_OUTCOMES_LABEL_TEXT"               value="결과:"></property>
+        <property name="SYLL_TEXTBOOKS_LABEL_TEXT"              value="교과서:"></property>
+        <property name="SYLL_GRADE_COMP_LABEL_TEXT"             value="채점 방식:"></property>
+        <property name="SYLL_GRADE_NOTE_LABEL_TEXT"             value="채점 노트:"></property>
+        <property name="SYLL_AD_LABEL_TEXT"                     value="치칭, 컨닝, 표절관련:"></property>
+        <property name="SYLL_SA_LABEL_TEXT"                     value="특수 지원:"></property>
+        
+        <!-- MT TAB TEXT -->
+        <property name="MT_LECTURE_SECTION_TABLE_COLUMN_TEXT"   value="섹션"></property>
+        <property name="MT_LECTURE_DAY_TABLE_COLUMN_TEXT"       value="날짜"></property>
+        <property name="MT_LECTURE_TIME_TABLE_COLUMN_TEXT"      value="시간"></property>
+        <property name="MT_LECTURE_ROOM_TABLE_COLUMN_TEXT"      value="교실"></property>
+        <property name="MT_LECTURE_LABEL_TEXT"                  value="강의"></property>
+        <property name="MT_ADD_LECTURE_BUTTON_ICON"             value="AddItem.png"></property>
+        <property name="MT_REMOVE_LECTURE_BUTTON_ICON"                 value="RemoveItem.png"></property>
+        <property name="MT_REC_SECTION_TABLE_COLUMN_TEXT"       value="섹션"></property>
+        <property name="MT_REC_DAY_TIME_TABLE_COLUMN_TEXT"      value="날짜와 시간"></property>
+        <property name="MT_REC_ROOM_TABLE_COLUMN_TEXT"          value="교실"></property>
+        <property name="MT_REC_TA1_TABLE_COLUMN_TEXT"                value="조교1"></property>
+        <property name="MT_REC_TA2_TABLE_COLUMN_TEXT"                value="조교2"></property>
+        <property name="MT_REC_LABEL_TEXT"                  value="추가 수업"></property>
+        <property name="MT_ADD_REC_BUTTON_ICON"             value="AddItem.png"></property>
+        <property name="MT_REMOVE_REC_BUTTON_ICON"                 value="RemoveItem.png"></property>
+        <property name="MT_LAB_SECTION_TABLE_COLUMN_TEXT"       value="섹션"></property>
+        <property name="MT_LAB_DAY_TIME_TABLE_COLUMN_TEXT"      value="날짜와 시간"></property>
+        <property name="MT_LAB_ROOM_TABLE_COLUMN_TEXT"          value="교실"></property>
+        <property name="MT_LAB_TA1_TABLE_COLUMN_TEXT"                value="조교1"></property>
+        <property name="MT_LAB_TA2_TABLE_COLUMN_TEXT"                value="조교2"></property>
+        <property name="MT_LAB_LABEL_TEXT"                  value="실험"></property>
+        <property name="MT_ADD_LAB_BUTTON_ICON"             value="AddItem.png"></property>
+        <property name="MT_REMOVE_LAB_BUTTON_ICON"                 value="RemoveItem.png"></property>
+        
+        
+        <!-- SCHEDULE TAB TEXT -->
+        <property name="SCHEDULE_CALENDAR_LABEL_TEXT"               value="달력"></property>
+        <property name="SCHEDULE_START_MON_LABEL_TEXT"              value="시작 월요일"></property>
+        <property name="SCHEDULE_END_FRI_LABEL_TEXT"                value="끝 금요일"></property>
+        <property name="SCHEDULE_ITEMS_LABEL_TEXT"                  value="일정 항목들"></property>
+        <property name="SCHEDULE_TYPE_TABLE_COLUMN_TEXT"            value="종류"></property>
+        <property name="SCHEDULE_DATE_TABLE_COLUMN_TEXT"            value="날짜"></property>
+        <property name="SCHEDULE_TITLE_TABLE_COLUMN_TEXT"           value="제목"></property>
+        <property name="SCHEDULE_TOPIC_TABLE_COLUMN_TEXT"           value="토픽"></property>
+        <property name="SCHEDULE_ADD_EDIT_LABEL_TEXT"               value="추가/변경"></property>
+        <property name="SCHEDULE_TYPE_LABEL_TEXT"                   value="타입:"></property>
+        <property name="SCHEDULE_DATE_LABEL_TEXT"                   value="날짜:"></property>
+        <property name="SCHEDULE_TITLE_LABEL_TEXT"                  value="제목:"></property>
+        <property name="SCHEDULE_TOPIC_LABEL_TEXT"                  value="주제:"></property>
+        <property name="SCHEDULE_LINK_LABEL_TEXT"                   value="링크:"></property>
+        <property name="SCHEDULE_ADD_UPDATE_BUTTON_TEXT"            value="추가/업데이트"></property>
+        <property name="SCHEDULE_CLEAR_BUTTON_TEXT"                 value="정"></property>
+        <property name="SCHEDULE_REMOVE_BUTTON_ICON"                value="RemoveItem.png"></property>
+
+        
+        <!-- OH TAB TEXT -->
+        <property name="OH_TAS_HEADER_LABEL_TEXT"           value="조교들"></property>
+        <property name="OH_TA_REMOVE_BUTTON_ICON"           value="RemoveItem.png"></property>
+        <property name="OH_ALL_RADIO_BUTTON_TEXT"           value="모두"></property>
+        <property name="OH_GRAD_RADIO_BUTTON_TEXT"          value="대학원생"></property>
+        <property name="OH_UNDERGRAD_RADIO_BUTTON_TEXT"     value="대학생"></property>
+        <property name="OH_NAME_TEXT_FIELD_PROMPT_TEXT"     value="이름"></property>
+        <property name="OH_EMAIL_TEXT_FIELD_PROMPT_TEXT"    value="이메일"></property>
+        <property name="OH_ADD_TA_BUTTON_TEXT"              value="조교 추가"></property>
+        <property name="OH_OFFICE_HOURS_HEADER_LABEL_TEXT"  value="오피스 시간"></property>간
+        <property name="OH_START_TIME_LABEL_TEXT"           value="시작시간:"></property>
+        <property name="OH_END_TIME_LABEL_TEXT"             value="종료시:"></property>
+        <property name="OH_NAME_TABLE_COLUMN_TEXT"          value="이름"></property>
+        <property name="OH_EMAIL_TABLE_COLUMN_TEXT"         value="이메일"></property>
+        <property name="OH_SLOTS_TABLE_COLUMN_TEXT"         value="타임슬롯"></property>
+        <property name="OH_TYPE_TABLE_COLUMN_TEXT"          value="타입"></property>
+        <property name="OH_START_TIME_TABLE_COLUMN_TEXT"    value="시작시간"></property>
+        <property name="OH_END_TIME_TABLE_COLUMN_TEXT"      value="종료시간"></property>
+        <property name="OH_MONDAY_TABLE_COLUMN_TEXT"        value="월"></property>
+        <property name="OH_TUESDAY_TABLE_COLUMN_TEXT"       value="화"></property>
+        <property name="OH_WEDNESDAY_TABLE_COLUMN_TEXT"     value="수"></property>
+        <property name="OH_THURSDAY_TABLE_COLUMN_TEXT"      value="목"></property>
+        <property name="OH_FRIDAY_TABLE_COLUMN_TEXT"        value="금"></property>
+
+	<!-- ADD TA ERROR MESSAGES -->
+	<property name="OH_NO_TA_SELECTED_TITLE"        value="No TA Selected"></property>
+        <property name="OH_NO_TA_SELECTED_CONTENT"      value="Toggle only possible if TA Selected"></property>
+        
+	<!-- EDIT TA DIALOG -->
+	<property name="OH_TA_DIALOG_HEADER_LABEL_TEXT"	value="조교 정보 변경"></property>
+	<property name="OH_TA_DIALOG_NAME_LABEL_TEXT"	value="이름: "></property>
+	<property name="OH_TA_DIALOG_EMAIL_LABEL_TEXT"	value="이메일: "></property>
+	<property name="OH_TA_DIALOG_TYPE_LABEL_TEXT"        value="타입: "></property>
+	<property name="OH_TA_DIALOG_OK_BUTTON_TEXT"         value="확인"></property>
+	<property name="OH_TA_DIALOG_CANCEL_BUTTON_TEXT"          value="취소"></property>
+        <property name="OH_TA_DIALOG_GRAD_RADIO_BUTTON_TEXT"           value="대학원생"></property>
+        <property name="OH_TA_DIALOG_UNDERGRAD_RADIO_BUTTON_TEXT"      value="대학생"></property>
+        
+        <!-- TO SWITCH BACK TO ANOTHER LANGUAGE -->
+        <property name="LANGUAGE_DIALOG_TITLE"          value="앱 언어선택"></property>
+        <property name="LANGUAGE_DIALOG_HEADER_TEXT"    value="언어를 선택하세요"></property>
+        <property name="LANGUAGE_DIALOG_CONTENT_TEXT"   value="유저 인터페이스의 언어를 선택하세요."></property>
+	<!-- does this part needs to be changed-->
+        <property name="WORK_FILE_EXT"          value="*.ta"></property>
+	<property name="WORK_FILE_EXT_DESC"     value="조교파일"></property>
+
+    </property_list>
+    
+    <property_options_list>
+        <property_options name="LANGUAGE_OPTIONS">
+            <option>한국어</option>
+        </property_options>
+    </property_options_list>
+</properties>

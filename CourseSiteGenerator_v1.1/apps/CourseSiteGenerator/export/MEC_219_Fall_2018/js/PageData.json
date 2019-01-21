@@ -1,0 +1,56 @@
+
+{
+    "subject":"MEC",
+    "number":"219",
+    "semester":"Fall",
+    "year":"2018",
+    "title":"Computer Science III",
+    "logos":{
+        "favicon":{
+            "href":"./images/icons/logos/SBUCSLogo.png"
+        },
+        "navbar":{
+            "href":"http://www.stonybrook.edu",
+            "src":"./images/icons/logos/SBUDarkRedShieldLogo.png"
+        },
+        "bottom_left":{
+            "href":"http://www.cs.stonybrook.edu",
+            "src":"./images/icons/logos/SBUCSLogo.png"
+        },
+        "bottom_right":{
+            "href":"http://www.cs.stonybrook.edu",
+            "src":"./images/icons/logos/StonyBig.png"
+        }
+    },
+    "instructor":{
+        "name":"Richard McKennacsd",
+        "link":"http://www.cs.stonybrook.edu/~richard",
+        "email":"richard@cs.stonybrook.edu",
+        "room":"New CS 216",
+        "photo":"./images/RichardMcKenna.jpg",
+        "hours":[
+            {
+                "day":"Tuesday",
+                "time":"1:00pm-2:20pm"
+            },
+            {
+                "day":"Wednesday",
+                "time":"2pm-3pm"
+            },
+            {
+                "day":"Thursday",
+                "time":"1:00pm-2:20pm"
+            }
+        ]
+    },
+    "pages":[
+        {
+            "name":"Home",
+            "link":"index.html"
+        },
+        {
+            "name":"HWs",
+            "link":"hws.html"
+        }
+    ]
+}

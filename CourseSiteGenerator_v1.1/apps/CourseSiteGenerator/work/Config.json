@@ -1,0 +1,24 @@
+
+{
+    "subjects":[
+        "CSE",
+        "CSEcsdscszx",
+        "MEC",
+        "MECdscsvd",
+        "The Struggle",
+        "Another"
+    ],
+    "numbers":[
+        "101",
+        "219"
+    ],
+    "semesters":[
+        "Fall",
+        "Spring",
+        "Summer"
+    ],
+    "years":[
+        "2018",
+        "2019"
+    ]
+}

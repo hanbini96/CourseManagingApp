@@ -1,0 +1,141 @@
+
+{
+    "startHour":"8",
+    "endHour":"23",
+    "grad_tas":[
+        {
+            "name":"Aarin Chase",
+            "email":"Aarin.Chase@stonybrook.edu"
+        },
+        {
+            "name":"Bo Cao",
+            "email":"Bo.Cao.1@stonybrook.edu"
+        },
+        {
+            "name":"Kaho Kui",
+            "email":"kaho.kui@stonybrook.edu"
+        },
+        {
+            "name":"Richard Huang",
+            "email":"yueyang.huang@stonybrook.edu"
+        }
+    ],
+    "undergrad_tas":[
+        {
+            "name":"Abraham Rosloff",
+            "email":"abraham.rosloff@stonybrook.edu"
+        },
+        {
+            "name":"Anghel De Las Casas",
+            "email":"anghel.delascasas@stonybrook.edu"
+        },
+        {
+            "name":"Dhruv Sheth",
+            "email":"dhruv.sheth@stonybrook.edu"
+        },
+        {
+            "name":"Heng An Lin",
+            "email":"Hengan.lin@stonybrook.edu"
+        },
+        {
+            "name":"Lei Song",
+            "email":"lei.song@stonybrook.edu"
+        },
+        {
+            "name":"Mankirat Gulati",
+            "email":"mankirat.gulati@stonybrook.edu"
+        },
+        {
+            "name":"Melanie Logan",
+            "email":"melanie.logan@stonybrook.edu"
+        },
+        {
+            "name":"Michael McDonagh",
+            "email":"Michael.J.McDonagh@stonybrook.edu"
+        },
+        {
+            "name":"Qihong Jiang",
+            "email":"qihong.jiang@stonybrook.edu"
+        },
+        {
+            "name":"Sammi Wu Leung",
+            "email":"sammi.wuleung@stonybrook.edu"
+        },
+        {
+            "name":"Stephen Chen",
+            "email":"stephen.chen@stonybrook.edu"
+        },
+        {
+            "name":"Weihao Li",
+            "email":"weihao.li@stonybrook.edu"
+        },
+        {
+            "name":"Xiangying Liu",
+            "email":"xiangying.liu@stonybrook.edu"
+        },
+        {
+            "name":"Xiaoxiao Liu",
+            "email":"xiao.x.liu@stonybrook.edu"
+        },
+        {
+            "name":"Zengxian Lin",
+            "email":"zengxian.lin@stonybrook.edu"
+        },
+        {
+            "name":"Zihao Wang",
+            "email":"zihao.wang.3@stonybrook.edu"
+        }
+    ],
+    "officeHours":[
+        {
+            "time":"9_30am",
+            "day":"MONDAY",
+            "name":"Lei Song"
+        },
+        {
+            "time":"9_30am",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
+        },
+        {
+            "time":"9_30am",
+            "day":"WEDNESDAY",
+            "name":"Zengxian Lin"
+        },
+        {
+            "time":"9_30am",
+            "day":"FRIDAY",
+            "name":"Lei Song"
+        },
+        {
+            "time":"10_00am",
+            "day":"MONDAY",
+            "name":"Melanie Logan"
+        },
+        {
+            "time":"10_00am",
+            "day":"TUESDAY",
+            "name":"Melanie Logan"
+        },
+        {
+            "time":"10_00am",
+            "day":"WEDNESDAY",
+            "name":"Melanie Logan"
+        },
+        {
+            "time":"10_00am",
+            "day":"FRIDAY",
+            "name":"Xiangying Liu"
+        },
+        {
+            "time":"11_00am",
+            "day":"TUESDAY",
+            "name":"Mankirat Gulati"
+        },
+        {
+            "time":"11_30am",
+            "day":"MONDAY",
+            "name":"Mankirat Gulati"
+        }
+    ]
+}
